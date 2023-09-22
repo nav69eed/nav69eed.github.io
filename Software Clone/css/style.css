@@ -1,0 +1,664 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+
+}
+
+/* HEADER */
+
+.header {
+    /* overflow-x: hidden; */
+    width: 100%;
+
+    position: relative;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header-> Logo Start */
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header .logo img {
+    border: 2px solid white;
+    height: 100px;
+    width: 120px;
+    z-index: 10;
+    margin-top: -2px;
+    padding: 8px 10px;
+}
+
+/* Header-> Logo End */
+
+/* Header-> Burger Start */
+
+.header .burger {
+
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+/* Header-> Burger End */
+
+/* Header-> Menu Start */
+.menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: hidden;
+    width: 0px;
+    height: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.menu li a,
+#cancel i {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a {
+    margin: 8px 2px;
+    display: block;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a i:hover,
+.menu a i:focus {
+
+    color: yellow;
+
+    /* background-color: aliceblue; */
+}
+
+.menu li {
+
+    /* width: 100%; */
+    list-style: none;
+    margin: 6px 2px;
+    /* padding: 5px; */
+}
+
+.menu ul {
+    /* width: 100%; */
+    /* justify-content: center; */
+}
+
+.increase-width {
+    width: 200px;
+
+}
+
+#cancel {
+    margin: 15px 0px;
+    width: 90%;
+    text-align: end;
+}
+
+/* Header-> Menu End */
+
+/* Header-> Tital Start */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.leftright {
+    position: absolute;
+    display: flex;
+    bottom: 52px;
+    right: 33px;
+}
+
+.title i {
+    color: white;
+    font-size: 36px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Header-> Tital End */
+
+/* header ends */
+
+/* About start */
+#about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.about-items {
+    width: 47%;
+    height: 753px;
+}
+
+#right-about img {
+    /* height: 200px; */
+    height: 100%;
+    width: 100%;
+}
+
+#left-about h1 {
+    margin: 2px 50px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+#left-about p {
+    text-align: justify;
+    padding: 25px 41px;
+    margin: 30px 50px;
+    border: 2px solid black;
+}
+
+/* about end */
+
+/* Maker start */
+#maker {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#maker-right img {
+    width: 100%;
+    height: 100%;
+}
+
+#maker-left p {
+    border: 2px solid white;
+    margin: 50px 46px;
+    padding: 23px 40px;
+}
+
+#maker-left h1 {
+    display: block;
+    width: 85%;
+    margin-top: 30px;
+}
+
+#maker-left button {
+    width: 30%;
+    border-radius: 10px;
+}
+
+#maker-left {
+    color: white;
+    background-color: #1e1e7e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.maker-items {
+    width: 48%;
+
+}
+
+/* Maker End */
+
+/* WeDo start */
+
+#wedo button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#wedo button {
+    background-color: black;
+    color: white;
+}
+
+#wedo p {
+    margin: 20px 2px;
+}
+
+#wedo h1 {
+    margin: 20px 2px;
+}
+
+#cards {
+    margin: 36px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards-items .num {
+    width: 45px;
+    color: black;
+    background-color: white;
+    border: 2px solid #1e1e7e;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.cards-items:hover {
+    color: white;
+    background-color: #1e1e7e;
+    border-color: #1e1e7e;
+}
+
+.cards-items {
+    transition: all 0.5s ease-in;
+    border: 2px solid black;
+    width: 25%;
+    padding: 34px;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WeDo Ends */
+
+/* Team start */
+.our-team {
+    background-color: #1e1e7e;
+    color: white;
+    padding: 40px 0;
+}
+
+.team {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team-cards img {
+    width: 100%;
+}
+
+.team-cards {
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-cards-name {
+    position: absolute;
+    height: 65px;
+   
+    width: 50%;
+    background-color: aliceblue;
+    bottom: -33px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Team End */
+/* Contact start */
+.contact input:focus {
+    color: #ffffff;
+    border: transparent;
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.contact input::placeholder {
+    color: white;
+
+}
+
+.contact input {
+    font-size: 18px;
+    display: block;
+    width: 40%;
+    margin: 30px 0;
+    margin-left: 6%;
+    padding: 12px 0px;
+    height: 25px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+}
+
+.contact button:hover {
+    /* background-color: #ffffff; */
+    opacity: 0.1;
+
+}
+
+.contact button {
+
+    margin-left: 6%;
+    background-color: yellow;
+    width: 14%;
+    padding: 14px 0;
+    border-radius: 0;
+}
+
+.contact {
+    padding: 40px 0px;
+    padding-bottom: 0;
+}
+
+.form {
+    /* width: 100%; */
+
+    background-color: #1e1e7e;
+    color: white;
+    padding: 23px 0px;
+    margin: 35px 0;
+}
+
+
+
+/* Contact End */
+
+
+/* Testimo Start */
+.testimo {}
+
+.testimo {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    height: 635px;
+    /* background-color: #8a5959; */
+}
+
+#i-1 {
+
+    background: url('../images/team_img1.jpg') no-repeat center center/cover;
+}
+
+#i-2 {
+
+    background: url('../images/team_img2.jpg') no-repeat center center/cover;
+}
+
+#i-3 {
+
+    background: url('../images/team_img3.jpg') no-repeat center center/cover;
+}
+
+.img {
+    border-radius: 50%;
+    position: absolute;
+    height: 150px;
+    top: -24%;
+    left: -5%;
+    width: 150px;
+    /* background-color: #ffffff; */
+
+}
+
+.text h6,
+.text p,
+.img,
+.quot {
+    transform: skew(40deg);
+}
+
+.quot {
+    display: block;
+    margin: auto;
+    margin-top: 6%;
+
+}
+
+.text {
+    /* display: none; */
+    width: 50%;
+    position: absolute;
+    top: 14%;
+
+    /* height: 251px; */
+    margin: 2%;
+    border: 2px solid #1e1e7e;
+    background-color: #e0e1e6;
+    transform: skew(-40deg);
+    padding: 5% 69px;
+    padding-left: 15%;
+}
+
+.n-lines:focus {
+    border-color: black;
+}
+
+.n-lines:active {
+    border-color: black;
+}
+
+.n-lines {
+    border: 9px solid #1e1e7e;
+    width: 70px;
+    border-radius: 20%;
+    margin: 15px;
+}
+
+.navigate {
+    display: flex;
+}
+
+/* Testimo End */
+
+
+/* footer start */
+
+.f-container {
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    background-color: #272626;
+    color: white;
+    padding: 60px 0px;
+}
+
+.f-items p {
+    margin: 40px 0px;
+    font-size: 18px;
+
+}
+
+.f-items div input:focus {
+    outline: none;
+}
+
+
+.f-items div input {
+    width: 60%;
+
+    margin: 0;
+    height: 100%;
+    border: none;
+    padding: 0 15px;
+}
+
+.f-items button:hover {
+    background-color: black;
+    color: white;
+}
+
+.f-items button {
+    transition: all .5s ease-in;
+
+    width: 40%;
+    background-color: yellow;
+    color: black;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 14px 1px;
+    /*   */
+}
+
+.f-items form div {
+
+    display: flex;
+    margin-top: 10%;
+    justify-content: start;
+    height: 50px;
+}
+
+.f-items {
+    padding: 15px;
+
+    width: 27%;
+    /* background-color: #1e1e7e; */
+}
+
+.social p i {}
+
+.social p:hover {
+    background-color: #1e1e7e;
+}
+
+.social p {
+    font-size: 25px;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: auto;
+
+    flex-wrap: wrap;
+    margin-top: 10%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.social {
+    display: flex;
+    margin: 10px 0px;
+
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    justify-content: center;
+
+}
+
+/* footer End */
+
+/* UTILITIES */
+
+h6 {
+    font-size: 20px;
+}
+
+.background {
+    transition: all 1.5s ease-out;
+    background: url(../images/banner.jpg) no-repeat center center/cover;
+}
+
+.next {
+    background: rgba(0, 0, 0, 0.6) url(../images/about_right.jpg) no-repeat center center/cover;
+    background-blend-mode: darken;
+    transition: all 1.5s ease-out;
+}
+
+.primeryh,
+.secondaryh {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.primeryh {
+    font-size: 7rem;
+    font-weight: bolder;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.secondaryh {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    background-color: yellow;
+}
+
+.btn {
+    width: 15%;
+    font-size: 21px;
+    padding: 18px 0px;
+    margin: 50px 0px;
+    border-radius: 9px;
+    border: transparent;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}

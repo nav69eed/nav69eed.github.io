@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .right {}
+
+        .container {
+            /* border: 2px solid black; */
+            padding: 5px;
+            display: flex;
+
+            margin-top: 17px;
+        }
+
+        body::before {
+            content: "";
+            background: url('3.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vmax;
+            height: 100vmax;
+            z-index: -1;
+            opacity: 0.5;
+        }
+.aa{
+    height: 2000px;
+    
+}
+#a1{
+    background-color: red;
+}
+#a2{
+    background-color: greenyellow;
+}
+        body {
+            color: white;
+            background-color: black;
+        }
+
+        .mid ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .mid ul li {
+
+            display: block;
+            /* width: 50px; */
+            margin: auto;
+            /* background-color: grey; */
+            /* text-align: center; */
+        }
+
+        .mid {
+            /* display: block;
+    width: 15%; */
+            margin: auto;
+            text-align: center;
+        }
+
+        .mid ul li a {
+            /* border: 2px solid white; */
+            border-radius: 3px;
+            text-decoration: none;
+            color: white;
+            margin: 0px 5px;
+            padding: 2px 5px;
+        }
+
+        .mid ul li a:hover {
+            background-color: grey;
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="left">
+                Logo
+            </div>
+            <div class="mid">
+                <ul>
+                    <li> <a href="http://google.com" target="_blank"><i class="fas fa-house-chimney"></i> Home</a> </li>
+                    <li> <a href="http://google.com" target="_blank"> <i class="fab fa-facebook"></i> Registration</a> </li>
+                    <li> <a href="http://google.com" target="_blank"> <i class="fas fa-contact-book"></i> Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="right">im right</div>
+        </div>
+    </nav>
+    <div class="aa" id="a1">
+<a href="#a2">goto a2</a>
+    </div>
+    <div  class="aa" id="a2">
+<a href="#a1">goto a1</a>
+    </div>
+</body>
+
+</html>

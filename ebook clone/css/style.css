@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------------
+
+                      navbar
+
+------------------------------------------------------------------ */
+.navbar .navbar-brand i{
+    font-size: 30px;
+}
+.navbar a{
+    color: white;
+}
+
+.navbar {
+    color: white;
+    background-color: transparent;
+    z-index: 99;
+}
+
+
+/* ------------------------------------------------------------------
+
+                      hero sections
+
+------------------------------------------------------------------ */
+
+.hero::before {
+content: "";
+background-color: rgba(0, 0, 0, 0.5);
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+right: 0;
+bottom: 0;
+
+}
+.hero {
+    background: url('../images/businessman-sitting-by-table-cafe.jpg') no-repeat center center/cover;
+    height: 448px;
+    position: absolute;
+    top: 0;
+}
+#title{
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+}
+#t-row{
+    position: relative;
+}
+.img{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+}

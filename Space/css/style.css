@@ -1,0 +1,267 @@
+/* 
+--------------------------------------------------
+                  GLOBAL
+--------------------------------------------------
+*/
+:root {
+    --cr: #fe3f40;
+    --cb: #03a4ed;
+}
+
+.c-b {
+
+    color: var(--cb);
+}
+
+.c-r {
+
+    color: #fe3f40;
+}
+
+/* 
+--------------------------------------------------
+                  NAVBAR
+--------------------------------------------------
+*/
+.navbar a:hover {
+    color: var(--cb);
+}
+
+.navbar button:hover {
+    background-color: var(--cb);
+}
+
+.navbar .contact {
+    border: none;
+    border-radius: 23px;
+    margin: 0 16px;
+    background-color: var(--cr);
+}
+
+.navbar {
+    background-color: rgb(154 140 140 / 20%);
+}
+
+/* 
+--------------------------------------------------
+                  HEADER
+--------------------------------------------------
+*/
+
+
+.rightcol {
+    display: flex;
+    padding-left: 6%;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../images/baner-dec-left.png') no-repeat;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+.leftcol {
+    background: url('../images/baner-dec-right.png') no-repeat top right;
+}
+
+.rightcol>div {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background: var(--cb);
+    margin: 40px 0;
+    padding: 0 13px;
+}
+
+.rightcol form button,
+.rightcol form button:hover {
+    color: var(--cr);
+    background-color: white;
+    border: none;
+}
+
+.rightcol form {
+    width: 100%;
+}
+
+.rightcol form input:focus {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.rightcol form input::placeholder {
+    color: white;
+}
+
+.rightcol form input {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.rightcol form button {
+    width: 165px;
+}
+
+
+/* 
+--------------------------------------------------
+                 ABOUT
+--------------------------------------------------
+*/
+
+#about {
+    background: url('../images/about-bg.png') no-repeat center center/cover;
+}
+
+
+
+.services p {}
+
+.services .s-text {
+    padding: 0px 18px;
+}
+
+
+
+#progressbar .h5 {
+    margin: 15PX 2PX;
+    DISPLAY: INLINE-BLOCK;
+}
+
+.progress-bar {
+    background: url('../images/2.PNG');
+}
+
+.progress {
+    height: 8px;
+}
+
+.progress .h3 {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 25px;
+}
+
+#pr1 .h3 {
+    left: 80%;
+}
+
+#pr2 .progress-bar {
+    width: 88%;
+}
+
+#pr2 .h3 {
+    left: 88%;
+}
+
+#pr3 .progress-bar {
+    width: 94%;
+}
+
+#pr3 .h3 {
+    left: 94%;
+}
+
+#pr1 .progress-bar {
+    width: 80%;
+}
+
+
+
+
+#specialization {
+    height: 400px;
+    /* background-color: #03a4ed; */
+    justify-content: space-evenly;
+}
+
+
+#specialization .col-md-3:hover {
+    translate: 0 50%;
+}
+
+#specialization>.col-md-3 {
+    height: 200px;
+    transition: all 500ms ease-in;
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    z-index: 2;
+}
+
+.rr>.col-md-3 {
+    background: url(../images/1.PNG);
+    background-size: cover;
+    height: 143px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 400ms;
+    width: 20%;
+    border-radius: 20px;
+    color: #ffffff;
+    z-index: 1;
+}
+.popup {
+    translate: 0 -50%;
+    /* top: -100px; */
+    z-index: 3;
+}
+
+.rr {
+    height: 400px;
+    /* background-color: #03a4ed; */
+    justify-content: space-evenly;
+    position: absolute;
+    top: 140px;
+    /* background: aqua; */
+    z-index: -1;
+    width: inherit;
+    left: 12px;
+}
+
+
+
+@media (max-width:600px) {
+    #about img {
+        display: block;
+        margin: auto;
+    }
+
+    #about {
+        background: none;
+        color: white;
+    }
+
+    .s-item {
+        flex-direction: column;
+        background: url(../images/1.PNG);
+        background-size: cover;
+        margin: 16px 0px;
+        padding: 40px 25px;
+        border-radius: 23px;
+        width: 100%;
+    }
+
+    #specialization,
+    .rr {}
+
+
+    #specialization .col-md-3,
+    .rr .col-md-3 {
+        width: 85%;
+        margin: 15px 0;
+    }
+
+    .rr .col-md-3 {
+        margin: 36px 0;
+        width: 84%;
+    }
+}

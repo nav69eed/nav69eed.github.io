@@ -1,0 +1,795 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+:root {}
+
+.navbar {
+    transition: all 1s ease-out;
+    /* height: 282px; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* background-color: rgb(226 201 198); */
+    background-color: white;
+    /* height: 52px; */
+    /* justify-content: center; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* flex: auto; */
+}
+
+
+#navigate {
+    display: flex;
+    flex: auto;
+    justify-content: end;
+    /* background-color: aquamarine; */
+}
+
+.items {
+    /* width: 50vmax; */
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+
+}
+
+.navigation ul li {
+    margin: 0px 11px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navigation ul li a:hover {
+    color: rgb(0 201 201);
+}
+
+.logo {
+    margin: 2px 20px;
+    font-size: 25px;
+    /* background-color: white; */
+    color: rgb(0, 202, 202);
+}
+
+.button a {
+    color: white;
+
+}
+
+.button {
+    /* border-radius: 50px;
+    background: #00c9c9;
+    box-shadow: 21px 21px 42px #005050,
+        -21px -21px 42px #00ffff; */
+    /* border-radius: 42px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 11px 11px 26px #666666,
+        -11px -11px 26px #ffffff; */
+    transition-property: all;
+    /* transition-duration: 800ms; */
+    border: 2px solid rgb(0 201 201);
+    background-color: rgb(0 201 201);
+
+    height: 48px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+
+    background-color: white;
+    font-size: 18px;
+}
+
+.button:hover a {
+    font-size: 18px;
+    color: rgb(0, 202, 202);
+}
+
+.button:hover {
+    color: rgb(0, 202, 202);
+
+}
+
+/* .button a:hover {
+    color: rgb(0 201 201);
+} */
+
+.navigation {
+    margin-left: 2px;
+
+}
+
+/* Burger */
+.burger {
+    position: absolute;
+    top: 20px;
+    right: 33px;
+    display: none;
+    cursor: pointer;
+}
+
+.lines {
+    border: 2px solid black;
+    height: 0px;
+    width: 36px;
+    margin: 6px 2px;
+}
+
+header {
+
+    color: white;
+    height: 575px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: -2;
+}
+
+#left {
+    width: 65%;
+    margin-left: 70px;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.head::before {
+    content: "";
+    color: white;
+    background: url("carousel-1.jpg") center center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 627px;
+    /* z-index: 1; */
+    opacity: 0.3;
+}
+
+.left_buttons {
+    display: flex;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-right: 35px;
+    height: 40px;
+    z-index: 1;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.services-items {
+    background-color: rgb(215, 250, 250);
+    margin: 36px;
+    padding: 43px;
+    margin-top: 100px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 800ms;
+    height: 194px;
+    width: 135px;
+    border-radius: 15px;
+    /* background: #00c9c9; */
+    box-shadow: 21px 21px 42px rgb(0, 201, 201),
+        -21px -21px 42px rgb(215, 250, 250);
+}
+
+.services-items:hover {
+    /* box-shadow: 0 0px 0px #005050,
+        -0px -0px 0px rgb(0, 201,201); */
+    /* border-radius: 50px;
+    background: #00c9c9;
+    box-shadow: 21px 21px 42px #005050,
+        -21px -21px 42px #00ffff; */
+    /* border-radius: 42px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 11px 11px 26px #666666,
+        -11px -11px 26px #ffffff; */
+    color: white;
+    font-size: 105%;
+    box-shadow: 0 0 0 rgb(0, 201, 201),
+        -0 -0 0 rgb(215, 250, 250);
+    border-radius: 0;
+    background-color: rgb(0, 202, 202);
+}
+
+.services-items h4 {
+    font-size: 20px;
+}
+
+#left h4 {
+    color: rgb(0 201 201);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+
+.about-item {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#a1 img {
+    height: 500px;
+    width: 550px;
+}
+
+h6 {
+    color: rgb(0 201 201);
+}
+
+#a2 {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#a2 p {
+    display: block;
+    margin-top: 10px;
+}
+
+h6 {
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+#bullets_main {
+    display: flex;
+    margin-top: 35px;
+
+}
+
+.bullets_items {
+    width: 50%;
+}
+
+.bullets_items i {
+    color: rgb(0 201 201);
+    margin-right: 15px;
+    font-size: 14px;
+
+}
+
+.cat {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-content: center;
+    margin: 40px 10px;
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    margin-bottom: 0;
+
+}
+
+
+
+.courses {
+    background-color: white;
+    padding-bottom: 55px;
+
+}
+
+.courses h6,
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.cat_items {
+    width: 50%;
+    height: 712px;
+    margin-bottom: -10px;
+    transition-property: all;
+    transition-duration: 800ms;
+}
+
+.cat_items img {
+    width: 99%;
+    height: 350px;
+    border-bottom: 7px solid white;
+    border-right: 7px solid white;
+    margin-bottom: -52px;
+    /* margin-top: 4px; */
+    transition-property: all;
+    transition-duration: 800ms;
+
+
+}
+
+.cat_items img:hover {
+    /* zoom: 105%; */
+    width: 100%;
+
+    height: 357px;
+
+    opacity: 0.5;
+}
+
+.cat_items img:hover,
+.cat_items {
+    background-color: rgb(0 201 201);
+
+}
+
+
+
+
+.cat:hover .btn {
+
+
+    visibility: visible;
+    top: -145px;
+    left: -75px;
+}
+
+.cat_items div .btn {
+    width: 100px;
+    position: relative;
+    left: -75px;
+
+    top: -80px;
+    height: 13px;
+    margin: 0;
+    background-color: rgb(0 201 201);
+    color: white;
+    visibility: hidden;
+}
+
+.cat_items div .btn:hover {
+    background-color: white;
+}
+
+.cat_items div .btn:hover a {
+    color: rgb(0 201 201);
+
+}
+
+.cat_items div div {
+    background-color: white;
+    color: rgb(0 201 201);
+    margin: 5px;
+    width: 160px;
+    text-align: center;
+    z-index: 15;
+    padding: 10px;
+    float: right;
+    position: relative;
+    top: -17px;
+    left: 0;
+}
+
+.courses h6 {
+    padding-top: 50px;
+}
+
+.top_courses {
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: white;
+    margin: 40px 10px;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+}
+
+
+.top_courses_items {
+    width: 33%;
+    margin: auto;
+}
+
+.top_courses_items img {
+    width: 100%;
+}
+
+.about h2 {
+    text-align: left;
+}
+
+.instructors {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 40px 10px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    background-color: rgb(215, 250, 250);
+}
+
+.instructors_item {
+    /* background-color: rgb(215, 250, 250); */
+    width: 25%;
+    /* border: 2px solid red; */
+    height: 584px;
+    text-align: center;
+
+
+}
+
+.instructors_item i {
+    margin: 0px 10px;
+    margin-top: 481px;
+    font-size: 35px;
+    color: rgb(0 201 201);
+    margin-bottom: 10px;
+
+}
+
+#instructor-1 {
+    background: url("img/team-1.jpg") top center no-repeat;
+}
+
+#instructor-2 {
+    background: url("img/team-2.jpg") top center no-repeat;
+}
+
+#instructor-3 {
+    background: url("img/team-3.jpg") top center no-repeat;
+}
+
+#instructor-4 {
+    background: url("img/team-4.jpg") top center no-repeat;
+}
+
+
+.students {
+    display: flex;
+    margin: 40px 10px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.students-item {
+    /* width: 32%; */
+    margin: 34px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.students-item img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.students-item div {
+    margin-top: 30px;
+    background-color: rgb(215, 250, 250);
+    padding: 18px;
+    transition-property: all;
+    transition-duration: 800ms;
+    border-radius: 15px;
+    /* background: #00c9c9; */
+    box-shadow: 21px 21px 42px rgb(0, 201, 201),
+        -21px -21px 42px rgb(215, 250, 250);
+
+}
+
+.students-item div:hover {
+    box-shadow: 0 0 0 rgb(0, 201, 201),
+        -0 -0 0 rgb(215, 250, 250);
+    border-radius: 0;
+    background-color: rgb(0 201 201);
+    color: white;
+}
+
+footer {
+    background-color: rgb(14, 14, 29);
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+#footer-main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+
+    margin: 40px 15px;
+    /* align-items: center; */
+
+    width: 25%;
+}
+
+/* .cards p a{
+    border: 2px solid white;
+    border-radius: 50%;
+} */
+.pics img {
+    width: 30%;
+    height: 70px;
+    margin: auto;
+    border: 3px solid white;
+}
+
+.cards div {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.News div {
+    margin-top: 40px;
+}
+
+.cards div div {
+    background-color: rgb(0 201 201);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 0px;
+    height: 30px;
+    width: 81px;
+    margin-right: 0;
+}
+
+.cards div input {
+    border: 0px solid white;
+    height: 40px;
+
+
+}
+
+.cards h2 {
+    margin-bottom: 25px;
+}
+
+.cards a {
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.contact p {
+    display: block;
+    margin-top: 13px;
+    margin-left: 2px;
+}
+
+footer a:hover {
+    color: rgb(0 201 201);
+
+}
+
+.f-navigation {
+    display: flex;
+    margin: 20px 23px;
+}
+
+footer hr {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.f-items {
+    width: 50%;
+    margin: auto;
+}
+
+#f-left div {
+    margin-left: 370px;
+}
+
+@media only screen and (min-width:0) and (max-width:372px) {
+    #a9 {
+        display: none;
+    }
+
+    * {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width:0) and (max-width:850px) {
+    .navbar {
+        width: 100%;
+        /* background-color: white; */
+        height: 282px;
+        background-color: rgba(255, 255, 255, 0.4);
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1001;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    #navigate div {
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    .items {
+        margin: 15px 2px;
+    }
+
+    .navbar .button {
+        margin-bottom: 10px;
+    }
+
+    .head::before {
+        height: 768px;
+    }
+
+   
+
+    .head {
+        height: 768px;
+    }
+
+
+    .left_buttons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* .left_buttons .btn{
+        justify-content: center;
+
+    } */
+    /* #left{
+        display: flex;
+        flex-direction: ;
+ 
+    } */
+    #a1 img {
+        height: 350px;
+        width: 300px;
+    }
+
+    .cat {
+        flex-direction: column;
+    }
+
+    .cat_items {
+        width: 90%;
+    }
+
+    .cat:hover .btn {
+        left: 45px;
+    }
+
+    .cat_items div .btn {
+
+        left: 45px;
+    }
+
+    .top_courses {
+        flex-wrap: wrap;
+    }
+
+    .top_courses_items {
+        width: auto;
+    }
+
+    .instructors {
+        flex-wrap: wrap;
+    }
+
+    .instructors_item {
+        width: 95%;
+        margin: auto;
+    }
+
+    .students {
+        flex-wrap: wrap;
+    }
+
+    #footer-main {
+        flex-direction: column;
+    }
+
+    /* .cards a {
+        display: inline-flex;
+    } */
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    .cards h2 {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* .cards a{
+    display: inline-block;
+} */
+    /* .cards h2 {
+        display: block;
+        width: 100%;
+        background-color: aliceblue;
+    }
+} */
+
+    .News {
+        display: flex;
+        justify-content: end;
+    }
+
+    footer hr {
+        margin-top: 25px;
+    }
+
+    #f-left {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .reduce-height {
+        height: 80px;
+    }
+
+    .reduce-opacity {
+        opacity: 0;
+    }
+
+    .navbar button {}
+
+}

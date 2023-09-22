@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+
+    <style>
+.container{
+    display: flex;
+    border: 2px solid black;
+    background-color: aquamarine;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.item{
+    background-color: rgb(94, 230, 22);
+    border: 2px solid red;
+    flex:auto;
+    /* justify-content: center; */
+
+}
+
+#item-2{
+    text-align: center;
+}
+#item-3{
+    text-align: right;
+}
+
+#item-2 li{
+list-style: none;
+display: inline-flex;
+
+/* display: inline; */
+}
+
+#item-2 li a{
+    text-decoration: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item-1">logo</div>
+        <div class="item" id="item-2">
+            <ul>
+                <li> <a href="http://google.com" target="_blank">home</a> </li>
+                <li> <a href="http://google.com" target="_blank">home</a> </li>
+                <li> <a href="http://google.com" target="_blank">home</a> </li>
+                <li> <a href="http://google.com" target="_blank">home</a> </li>
+            </ul>
+        </div>
+        <div class="item" id="item-3">
+            search here
+        </div>
+    </div>
+</body>
+
+</html>

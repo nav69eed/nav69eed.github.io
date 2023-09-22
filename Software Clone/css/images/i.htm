@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d {
+            background: black;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d">
+        ajdlajkjskjskjskajskajskjakiajskaska
+        ajdlajkjskjskjskajskajskjakiajskaskaasas
+        ajdlajkjskjskjskajskajskjakiajskaskaasasasasa
+        asx
+        as
+    </div>
+    <button onclick="next()" class="a">Next</button>
+    <button class="b">Previous</button>
+
+    <script>
+        /* a = document.querySelector('.a')
+         d = document.querySelector('.d')
+         b = document.querySelector('.b')
+         let i=1;
+         let c;
+         let f=8;
+         a.addEventListener('click', () => {
+             if (i == 8) {
+                 i = 2;
+             }
+             i = i + 1;
+             d.style.background = `url('${i}.jpg')`;
+             f = i;
+         })
+         b.addEventListener('click', () => {
+             
+             if (f == 2) {
+                 f = 8
+             }
+             f = f - 1;
+             d.style.background = `url('${f}.jpg')`;
+             i=f;
+         })*/
+        function next() {
+            a = document.querySelector('.a')
+            d = document.querySelector('.d')
+            d.style.background = `url('${2}.jpg')`;
+        }
+    </script>
+</body>
+
+</html>

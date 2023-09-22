@@ -1,0 +1,155 @@
+@media only screen and (max-width:1040px) {
+    .header .primeryh {
+        font-size: 5rem;
+    }
+
+    .header .secondaryh {
+        font-size: 5rem;
+    }
+
+    .f-items button {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .header .primeryh {
+        font-size: 4rem;
+    }
+
+    .header .secondaryh {
+        font-size: 4rem;
+    }
+
+    .header .logo {
+        margin-left: 1%;
+        justify-content: start;
+    }
+
+    #left-about img {
+        width: 100%;
+    }
+
+    .about-items {
+        width: 90%;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    .cards-items {
+        width: 70%;
+    }
+
+    #cards {
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .f-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-items {
+        width: 80%;
+    }
+
+    .f-items button {
+        width: 140px;
+    }
+
+    .testimo {
+        height: 670px;
+    }
+
+    .text .text-para {
+        position: relative;
+        /* background-color: red; */
+        height: 230px;
+        overflow: hidden;
+    }
+
+    .text {
+        transform: none;
+        border-radius: 30px;
+        height: 454px;
+    }
+
+    .img {
+        position: unset;
+    }
+
+    .text h6,
+    .text p,
+    .img,
+    .quot {
+        transform: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .header .primeryh {
+        font-size: 3rem;
+    }
+
+    .header .secondaryh {
+        font-size: 3rem;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    #maker {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .maker-items {
+        width: 90%;
+    }
+
+    .team-cards img {
+        margin-top: 33px;
+    }
+
+    .team-cards-name {
+        width:100%;
+    }
+    .team-cards {
+        width: 80%;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .header .primeryh {
+        font-size: 2rem;
+    }
+
+    .header .secondaryh {
+        font-size: 2rem;
+    }
+
+    .leftright {
+        right: 1px;
+    }
+
+    #left-about p {
+        /* width: 92%; */
+        margin: 30px 0px;
+    }
+
+    .contact input {
+        width: 80%;
+    }
+
+    .contact button {
+        width: 80px;
+    }
+}
