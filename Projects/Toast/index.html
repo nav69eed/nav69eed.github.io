@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {}
+
+        .btn {
+            height: 100vh;
+            position: relative;
+            background-color: #e0d7d7;
+        }
+
+        .btn button {
+            padding: 2px 2px;
+            margin: 10px 5px;
+            width: 100px;
+            height: 35px;
+            background-color: rgb(44, 43, 43);
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .toast {
+            /* background-color: red; */
+            /* width: 30%;
+    height: 100px; */
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .toastchild {
+            width: 30vw;
+            /* height: 30px; */
+            margin: 5px 0;
+            padding: 10px 7px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: rgba(106, 179, 106, 0.5);
+        }
+
+        .toastprogress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: green;
+        }
+
+        .error {
+            background-color: rgb(206, 163, 163);
+        }
+
+        .invalid {
+            background-color: rgb(252, 212, 152);
+        }
+
+        .err {
+            background-color: red;
+        }
+
+        .in {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <button onclick="showtoast(successmsg)">Succes</button>
+        <button onclick="showtoast(successmsg)">Error</button>
+        <button onclick="showtoast(successmsg)">Invalid</button>
+        <div class="toast">
+        </div>
+    </div>
+
+    <script defer>
+      /*  // buttons=document.querySelectorAll('button');
+        let toastBox = document.querySelector('.toast');
+        successmsg = 'Success'
+        errormsg = 'Error, please try again'
+        invalidmsg = 'Invalid Input, Try again'
+
+        function showtoast(msg) {
+            toast = document.createElement('div');
+            toast.classList.add('toastchild')
+            toast.innerHTML = msg;
+            toastprogress = document.createElement('div');
+            toastprogress.classList.add('toastprogress')
+
+            toast.appendChild(toastprogress);
+            toastBox.appendChild(toast);
+
+            if (msg.includes('Error')) {
+                toast.classList.add('error');
+                toastprogress.classList.add('err')
+            }
+            else if (msg.includes('Invalid')) {
+                toast.classList.add('invalid');
+                toastprogress.classList.add('in');
+
+            }
+            setTimeout(() => {
+                toast.remove();
+                toast.remove();
+                toast.remove();
+            }, 1000)
+        }
+*/
+        // buttons.forEach(button => {
+        //     button.addEventListener('click',showtoast(successmsg));
+        // });
+    </script>
+</body>
+
+</html>

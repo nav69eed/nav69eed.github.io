@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icofont.min.css">
+    <title>Song Player</title>
+</head>
+
+<body>
+    <div class="song-box">
+        <nav class="song-nav">
+            <div>
+                <i class="icofont-rounded-left"></i>
+            </div>
+            <div>
+                <i class="icofont-navigation-menu"></i>
+            </div>
+        </nav>
+        <img src="Thumbnail.PNG" class="img">
+
+        <h1>
+            MI AMOR
+        </h1>
+        <p>
+            IamPrann ft. Lofi
+        </p>
+        <audio class="song">
+            <source src="Mi Amor - LoFi.mp3" type="audio/mpeg">
+        </audio>
+        <div class="time">
+            <div class="s-time">--/--</div>
+            <div class="e-time">--/--</div>
+        </div>
+        <input type="range" class="progress">
+        <div class="controls">
+            <div class="jumpb"><i class="icofont-ui-previous"></i></div>
+            <div class="play"><i class="icofont-ui-play playbtn" onclick="playpause()"></i></div>
+            <div class="jumpf"><i class="icofont-ui-next"></i></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

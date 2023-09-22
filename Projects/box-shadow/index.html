@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="row">
+
+            <div class="ranges col-sm-8">
+                <label for="r1">Offset X</label>
+                <input type="range" class="form-range" value="3" max="30" min="-30" id="r1">
+                <label for="r2">Offset Y</label>
+                <input type="range" class="form-range" value="5" max="30" min="-30" id="r2">
+                <label for="r3">Blur Radius</label>
+                <input type="range" class="form-range" value="7" max="50" min="0" id="r3">
+                <label for="r4">Spread Radius</label>
+                <input type="range" class="form-range" value="6" max="50" min="0" id="r4">
+                <label for="r5">Border Radius</label>
+                <input type="range" class="form-range" value="10" max="100" min="0" id="r5">
+                <label for="r5">Shadow Color</label>
+                <input type="color" class="color form-control-color" value="#">
+            </div>
+
+
+            <div class="col-sm-4 d-flex align-items-center justify-content-evenly ">
+                <textarea class="form-text output" id="" cols="40" rows="5" readonly placeholder="box-shadow: 3px 5px 7px 6px #000000;
+border-radius: 10px;"></textarea>
+                <button class="btn btn-primary">Copy</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

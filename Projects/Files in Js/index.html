@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text File Reader</title>
+    <style>
+        div {
+            width: 50%;
+            margin: auto;
+            color: rgb(0, 60, 112);
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        loadcadjdn ccccnsjcsccsnc csckmmskcns scksnc jwjdiwjd wjcwihc kdnsdn dkwjdwjd smsddwokdowkdow
+        dmddmknc scxmmsjmcj
+        smkmdjmd
+        sccnkmckdnc
+        scdcndkjncdk
+        sjdcjdvncdi
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text File Reader</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <style>
+        .rating {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .star {
+            color: gray;
+        }
+
+        .star.active {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+    </div>
+
+    <button id="saveButton">Save Content to File</button>
+
+    <div class="rating">
+        <span class="star" data-rating="1">&#9733;</span>
+        <span class="star" data-rating="2">&#9733;</span>
+        <span class="star" data-rating="3">&#9733;</span>
+        <span class="star" data-rating="4">&#9733;</span>
+        <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="selected-rating">0</p>
+
+    <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#content', {
+            strings: ["Welcome to the tutorials point.","There are many different course on our platform.","We also provide you withthe tutorial for wach and every techcnology."],
+            typeSpeed: 10,
+            backSpeed: 10,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

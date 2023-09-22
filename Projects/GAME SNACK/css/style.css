@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, blue, green);
+}
+.game-board{
+    width: 80vh;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
+    border: 2px solid green;
+}
+.head{
+    
+    transform: scale(1.5);
+    border: 2px  solid transparent;
+    border-radius: 50%;
+    background-color: purple;
+}
+.body{
+    background-color: yellow;
+}
+.food{
+    background-color: aquamarine;
+}

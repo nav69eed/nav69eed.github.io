@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --songdefault: #f52192
+}
+
+body {
+    height: 100vh;
+    background-color: #ffe0e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-box {
+    height: 90vh;
+    position: relative;
+    padding: 20px 20px;
+    width: 300px;
+    /* width: 100vw; */
+    /* max-height: 600px; */
+    background-color: #ffe0e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px 5px #e7ccd1;
+    flex-direction: column;
+}
+
+@media screen and (max-width:550px) {
+    .song-box {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.song-nav>div,
+.controls>div {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px rgb(174, 170, 171);
+    font-size: 20px;
+    color: var(--songdefault);
+    padding: 10px;
+}
+
+.controls>div:active {
+    box-shadow: 0px 0px 4px 3px rgb(174, 170, 171);
+
+}
+
+.song-nav {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 200px;
+    margin-top: 50px;
+    height: 200px;
+    border: 8px solid white;
+    border-radius: 50%;
+}
+
+/* .song-box */
+.song-box h1 {
+    font-size: 25px;
+    /* margin: 1px 10px; */
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.song-box p {
+    margin-bottom: 25px;
+}
+
+.controls {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.controls .play {
+    background-color: var(--songdefault);
+    color: white;
+    scale: 1.5;
+    box-shadow: 4px 4px 4px #c1bebe;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.progress {
+    width: 100%;
+    /* -webkit-appearance: none; */
+    appearance: none;
+    background-color: var(--songdefault);
+    border-radius: 50px;
+    height: 6px;
+    cursor: pointer;
+    overflow: visible;
+    margin: 20px 0px;
+    margin-top: 12px;
+}
+
+.progress::-webkit-slider-thumb {
+    color: white;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: var(--songdefault);
+    box-shadow: 4px 4px 4px rgb(174, 170, 171);
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

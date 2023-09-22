@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GPT-3.5 API Example</title>
+</head>
+
+<body>
+    <h1>GPT-3.5 API Example</h1>
+    <div>
+        <label for="prompt">Enter your prompt:</label>
+        <input type="text" id="prompt" />
+        <!-- <button onclick="generateResponse()">Generate Response</button> -->
+        <!-- <button onclick="getChatGPTResponse()">Get ChatGPT Response</button> -->
+        <button onclick="getChatGPTResponse()">Get ChatGPT Response</button>
+    </div>
+    <div>
+        <h2>Generated Response:</h2>
+        <p id="response"></p>
+    </div>
+
+    <!-- <script>
+        async function generateResponse() {
+            const prompt = document.getElementById('prompt').value;
+            const responseElement = document.getElementById('response');
+
+            const apiKey = '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'; // Replace with your GPT-3 API key
+            const apiUrl = 'https://api.openai.com/v1/chat/completions';
+
+            const headers = {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${apiKey}`
+            };
+
+            const requestBody = {
+                // prompt: prompt,
+                // max_tokens: 50 // Adjust as needed
+                "model": "text-davinci-003",
+                "prompt": "Say this is a test",
+                "max_tokens": 7,
+                "temperature": 0
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(requestBody)
+                });
+
+                const responseData = await response.json();
+                const generatedText = responseData.choices[0].text;
+
+                responseElement.textContent = generatedText;
+            } catch (error) {
+                // console.error('Error:', error);
+            }
+        }
+    </script> -->
+
+
+    <!-- <script>
+        const makeChatGPTRequest = (text) => {
+            const openai = new OpenAI({
+                apiKey: "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"
+            });
+
+            const response = await openai.engine.createCompletion("text", {
+                prompt: text,
+                maxTokens: 100
+            });
+
+            return response.result.choices[0].text;
+        };
+
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", () => {
+            const text = prompt("What do you want to ask ChatGPT?");
+            const response = makeChatGPTRequest(text);
+            alert(response);
+        });
+    </script> -->
+
+
+    <script>
+        const makeChatGPTRequest = (text) => {
+            const xhr = new XMLHttpRequest();
+
+            xhr.open("POST", "https://api.openai.com/v1/chat/completions");
+            xhr.setRequestHeader("Authorization", "Bearer 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");
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            const data = JSON.stringify({
+                prompt: text,
+                maxTokens: 100
+            });
+
+            xhr.send(data);
+
+            xhr.onload = () => {
+                if (xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+
+                    return response.choices[0].text;
+                } else {
+                    throw new Error(xhr.statusText);
+                }
+            };
+        };
+
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", () => {
+            const text = prompt("What do you want to ask ChatGPT?");
+            const response = makeChatGPTRequest(text);
+            alert(response);
+        });
+
+    </script>
+</body>
+
+</html>

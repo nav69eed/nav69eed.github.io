@@ -1,0 +1,26 @@
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    box-shadow: 3px 5px 7px 6px #000000;
+    border-radius: 10px;
+}
+
+body {
+    background: #cdd7e0!important;
+}
+
+textarea {
+    background: transparent;
+}
+
+.container {
+    flex-direction: column;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    /* background: aqua; */
+    align-items: center;
+}

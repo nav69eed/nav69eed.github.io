@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analogue Clock
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+            background: linear-gradient(45deg, #45cb77, #32ebdd);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clock span {
+            transform: rotate(calc(-30deg* var(--i)));
+            display: inline-block;
+        }
+
+        .clock ul li {
+            list-style: none;
+            position: absolute;
+            transform: rotate(calc(30deg* var(--i)));
+            text-align: center;
+            inset: 5px;
+        }
+
+
+        .clock {
+            /* overflow: visible; */
+            height: 40vw;
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 0px 32px 10px rgba(255, 255, 255, 0.5);
+            align-items: center;
+            position: relative;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 50%;
+            font-size: 4vw;
+        }
+
+        .clock::after {
+            content: "";
+            height: 1rem;
+            width: 1rem;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .needles span {
+            width: 5px;
+            height: var(--height);
+            position: absolute;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        .needles {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .hr span {
+            /* height: 10vw; */
+        }
+
+        .mm {}
+
+        .ss {}
+
+        .ff {
+            border-width: var(--i)*10 px;
+            border-color: #000;
+            border-style: solid;
+        }
+
+        .a1 {
+            /* background-color: red; */
+            height: 26vw;
+            width: 26vw;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="a1">
+        </div>
+        <div class="needles hr " style="--height:10vw"><span></span></div>
+        <div class="needles mm " style="--height:12vw"><span></span></div>
+        <div class="needles ss " style="--height:14vw"><span></span></div>
+        <ul>
+            <li style="--i:1"><span>1</span></li>
+            <li style="--i:2"><span>2</span></li>
+            <li style="--i:3"><span>3</span></li>
+            <li style="--i:4"><span>4</span></li>
+            <li style="--i:5"><span>5</span></li>
+            <li style="--i:6"><span>6</span></li>
+            <li style="--i:7"><span>7</span></li>
+            <li style="--i:8"><span>8</span></li>
+            <li style="--i:9"><span>9</span></li>
+            <li style="--i:10"><span>10</span></li>
+            <li style="--i:11"><span>11</span></li>
+            <li style="--i:12"><span>12</span></li>
+        </ul>
+    </div>
+    <script>
+        h = document.querySelector('.hr')
+        m = document.querySelector('.mm')
+        s = document.querySelector('.ss')
+        function time() {
+            d = new Date();
+            hr = d.getHours();
+            mm = d.getMinutes();
+            ss = d.getSeconds();
+            h.style.transform = `rotate(${hr * 30 + mm / 2}deg)`
+            m.style.transform = `rotate(${mm * 6}deg)`
+            s.style.transform = `rotate(${ss * 6}deg)`
+        }
+        setInterval(time, 1000);
+    </script>
+</body>
+
+</html>
