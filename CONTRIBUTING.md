@@ -8,5 +8,5 @@ First of all, thank you for considering contributing to My Website! By participa
 2. Clone the forked repository to your local machine:
 
    ```bash
-   git clone[ https://github.com/your-username/your-project.git
-](https://github.com/nav69eed/nav69eed.github.io)https://github.com/nav69eed/nav69eed.github.io
+   git clone[ https://github.com/nav69eed/nav69eed.github.io
+]
