@@ -1,0 +1,87 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap");
+
+:root {
+  --primary: white;
+  --secondary: #391560;
+  --action: #f77f00;
+  --tertiary: #b12166;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 
+      HEADER
+*/
+
+.nav-item p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.web-logo {
+  height: 2.5rem;
+  width: 7rem;
+}
+
+/* 
+TOGGLE SWITCH
+
+*/
+.toggle {
+  background-color: var(--tertiary);
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+  color: black;
+}
+
+.icon--sun {
+  transform: scale(0);
+  color: yellow;
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+.dropdown-menu[data-bs-popper] {
+  right: 0;
+  left: unset;
+}
+
+/* 
+Toggler icon */
+
+.navbar button:focus,
+.navbar button {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+}
