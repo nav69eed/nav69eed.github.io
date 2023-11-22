@@ -1,3 +1,10 @@
+body{
+  background-color: var(--primary);
+}
+
+*{
+  transition: background-color .5s;
+}
 .c-p {
   color: var(--primary);
 }
@@ -10,6 +17,35 @@
 .c-t {
   color: var(--tertiary);
 }
+.inverted-color {
+  filter: invert(100%);
+}
+.btn-primary,
+.btn:active,
+.btn.active,
+.btn:focus {
+  background-color: var(--action) !important;
+  padding: 5px 5px;
+  border-color: var(--action) !important;
+  outline: none; /* Remove the default focus outline */
+}
+
+.btn-primary:hover{
+  background-color: var(--primary) !important;
+  color: var(--action);
+  border-color: var(--action);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 NAVBAR TOGGLER ICON

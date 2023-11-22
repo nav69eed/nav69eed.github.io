@@ -3,21 +3,34 @@
 
 :root {
   --primary: white;
+  --navbg: rgba(255, 255, 255, 0.75);
   --secondary: #391560;
   --action: #f77f00;
   --tertiary: #b12166;
+  --fontcolor: black;
+  --tcolor: rgba(17, 24, 39, 1);
+  --headingcolor: rgb(7, 10, 17);
 }
 html {
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  color: var(--fontcolor);
+}
 /* 
       HEADER
 */
-
+.navbar {
+  background-color: var(--navbg);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 .nav-item p {
   padding-bottom: 0;
   margin-bottom: 0;
+  margin-top: 6px;
 }
 
 .web-logo {
@@ -84,4 +97,157 @@ Toggler icon */
   outline: none;
   box-shadow: none;
   padding: 0;
+}
+
+/* 
+
+Hero Section
+ */
+
+.hero {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 
+TEXT INTRO
+*/
+.text-intro {
+  max-width: 60%;
+  font-size: 1.125rem;
+}
+
+/* 
+              LOGIN FORM
+*/
+
+.form-container {
+  width: 320px;
+  border-radius: 12px;
+  padding: 2rem;
+  color: var(--tcolor);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-group label::placeholder {
+  color: var(--tcolor);
+}
+.input-group label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--tcolor);
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 0.0625rem solid rgba(55, 65, 81, 1);
+  outline: 0;
+  color: var(--tcolor);
+  background-color: transparent;
+  padding: 0.75rem 1rem;
+}
+
+.input-group input:focus {
+  border-color: var(--action);
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 8px 0 14px 0;
+}
+
+.forgot a,
+.signup a {
+  color: var(--headingcolor);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot a:hover,
+.signup a:hover {
+  text-decoration: underline var(--action);
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  background-color: var(--action);
+  padding: 0.75rem;
+  text-align: center;
+  color: var(--headingcolor);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: var(--tcolor);
+}
+
+.social-message .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--tcolor);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .icon {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-icons .icon svg:hover {
+  fill: var(--headingcolor);
+}
+.social-icons .icon svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: var(--tcolor);
+}
+
+.signup {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--tcolor);
 }
