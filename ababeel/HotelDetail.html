@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ababeel Travel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hotelView.css">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa-brands fa-whatsapp me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                            class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <div class="d-flex flex-row align-items-end">
+                    <div class="">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="">
+                        <h3 class="text-primary m-0">ABABEEL TRAVEL</h3>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="" class="nav-item nav-link active">Home</a>
+                    <a href="" class="nav-item nav-link">Hotels</a>
+                    <a href="" class="nav-item nav-link">Transport</a>
+                    <a href="" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <button popovertarget="bookingform" class="btn btn-primary rounded-pill py-2 px-4">Book Now</button>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown text-uppercase">Jabal Omar Hotel
+                            Makkah
+                        </h1>
+                        <div class="w-75 mx-auto animated slideInDown">
+                            <button popovertarget="bookingform" class="btn btn-primary rounded-pill py-2 px-4">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Hotel's Pictures -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Pictures</h6>
+                <h1 class="mb-5">Hotel's Pictures</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid"
+                                    src="https://www.irfanulhudatravels.com/LocalCDN/Files/1/Hotel/3/Image/beb4b9f4-a8a4-4af5-8a91-4459e7e385b8/1484263811_WxH.jpeg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid"
+                                    src="https://www.irfanulhudatravels.com/LocalCDN/Files/1/Hotel/3/Image/f72d3f17-3ae3-49c0-9402-0f795766bada/kiswah%20bath.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid"
+                                    src="https://www.irfanulhudatravels.com/LocalCDN/Files/1/Hotel/3/Image/2fe50cfe-92af-4a2d-819e-64a985ac0335/kiswah%20quint.jpg"
+                                    alt="">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s"
+                    style="min-height: 350px;overflow: hidden;">
+                    <a class="position-relative d-block h-100 overflow-hidden">
+                        <img class="img-fluid position-absolute w-100 h-100"
+                            src="https://www.irfanulhudatravels.com/LocalCDN/Files/1/Hotel/3/Image/9478fb39-abb6-4789-888d-32616ae723a8/quad%20kiswah.jpg"
+                            alt="" style="object-fit: cover;">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hotel's Pictures -->
+
+
+    <!-- About Hotel -->
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="text-primary">About This Hotel</h2>
+                <hr>
+                <h5 class="text-uppercase">Main Highlights</h5>
+                <div class="d-flex">
+                    <div class="icon-box">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                </div>
+                <div class="advantages">
+                    <h5 class="text-uppercase">Advantages</h5>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Every hotel staff to have Proper PPT kit for COVID-19
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Every staff member wears face masks and gloves at all
+                            service times.</li>
+                        <li><i class="fas fa-check-circle"></i> Hotel staff ensures to maintain social distancing at all
+                            times.</li>
+                        <li><i class="fas fa-check-circle"></i> The hotel has In-Room Dining options available</li>
+                    </ul>
+                </div>
+                <div class="amenities">
+                    <h5 class="text-uppercase">Amenities</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5><i class="fas fa-bicycle"></i> Activities</h5>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Kids' play area</li>
+                                <li><i class="fas fa-check-circle"></i> Gym</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><i class="fas fa-credit-card"></i> Payment Method</h5>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Credit card (Visa, Master card)</li>
+                                <li><i class="fas fa-check-circle"></i> Cash</li>
+                                <li><i class="fas fa-check-circle"></i> Debit Card</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><i class="fas fa-shield-alt"></i> Safety & Security</h5>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Doctor on Call</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><i class="fas fa-concierge-bell"></i> Services</h5>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Dry cleaning</li>
+                                <li><i class="fas fa-check-circle"></i> Room Service</li>
+                                <li><i class="fas fa-check-circle"></i> Special service</li>
+                                <li><i class="fas fa-check-circle"></i> Waiting Area</li>
+                                <li><i class="fas fa-check-circle"></i> Concierge</li>
+                                <li><i class="fas fa-check-circle"></i> Laundry facilities</li>
+                                <li><i class="fas fa-check-circle"></i> Ironing Service</li>
+                                <li><i class="fas fa-check-circle"></i> Lift</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5><i class="fas fa-language"></i> Staff Language</h5>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> English</li>
+                                <li><i class="fas fa-check-circle"></i> Arabic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="price-box">
+                    <p>Price Start at</p>
+                    <strong class="price">SR 110</strong>
+                    <p>1 room per night</p>
+                    <p>All taxes included</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                    <p>Food service available</p>
+                    <button popovertarget="bookingform" class="btn btn-primary rounded-pill">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Hotel -->
+
+
+    <div class="h-100 w-100" popover id="bookingform">
+
+        <!-- Booking Start -->
+        <div class="container-xxl center-div">
+            <div class="container">
+                <div class="booking p-5 position-relative">
+                    <button class="position-absolute top-0 end-0 btn text-white p-1" popovertarget="bookingform" popovertargetaction="hide" ><i class="fa-solid fa-xmark"></i></button>
+                    <div class="row g-5 align-items-center">
+                        <div class="col-md-6 text-white">
+                            <h6 class="text-white text-uppercase">Booking</h6>
+                            <h1 class="text-white mb-4">Al Madina Hotel</h1>
+                            <p class="mb-4">TWe are a trusted platform dedicated to simplifying hotel bookings in Makkah and Madina. We help pilgrims and travelers find comfortable accommodations effortlessly.                            </p>
+                            <p class="mb-4">Our mission is to provide hassle-free, reliable, and affordable room booking
+                                services for all visitors to the holy cities of Makkah and Madina.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="text-white mb-4">Book A Room</h1>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-transparent" id="name"
+                                                placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="number" placeholder="+963025678982" class="form-control bg-transparent" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email">Your Whatsapp No.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating date" id="date3" data-target-input="nearest">
+                                            <input type="text" class="form-control bg-transparent datetimepicker-input"
+                                                id="checkIndatetime" placeholder="Date & Time" data-target="#date3"
+                                                data-toggle="datetimepicker" />
+                                            <label for="checkIndatetime">Check In - Date & Time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating date"id="date4" data-target-input="nearest">
+                                            <input type="text" class="form-control bg-transparent datetimepicker-input"
+                                                id="datetime" placeholder="Date & Time" data-target="#date4"
+                                                data-toggle="datetimepicker" />
+                                            <label for="datetime">Check Out - Date & Time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control bg-transparent" id="guests"
+                                                placeholder="Number of Guests" value="1">
+                                            <label for="name">Number of Guests</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control bg-transparent" id="rooms"
+                                                placeholder="Your Name" value="1" >
+                                            <label for="name">Number of Rooms</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Start -->
+
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footermt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row p-3">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">ABABEEL TRAVEL</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        For more queries contact <a href=""><i class="fa-brands fa-whatsapp me-2">+9234-6574567</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

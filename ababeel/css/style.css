@@ -22,6 +22,12 @@
     z-index: 99;
 }
 
+.center-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*** Spinner ***/
 #spinner {
@@ -271,7 +277,7 @@
 
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/booking.jpg);
+    background: linear-gradient(rgb(53 53 53 / 90%), rgb(26 26 26 / 90%)), url(https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -477,4 +483,10 @@
 
 .swiper-pagination-bullet {
     background-color: var(--primary);
+}
+
+
+.bootstrap-datetimepicker-widget{
+    position: absolute !important;
+    top: 60px !important;
 }
